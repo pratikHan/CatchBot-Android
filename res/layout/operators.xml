@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/operatorslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonmultiply"
+                     android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/imageButtonadd"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/btnmultiplyp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:tag="*" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonadd"
+                     android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="63dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/btnaddp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:tag="+" />
+
+                <ImageButton
+                    android:id="@+id/imageButtondivide"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/imageButtonadd"
+                    android:layout_marginBottom="37dp"
+                    android:layout_marginRight="61dp"
+                    android:layout_toLeftOf="@+id/imageButtonadd"
+                    android:background="@drawable/btndividep"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:tag="/" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonminus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/imageButtondivide"
+                    android:layout_marginLeft="141dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/imageButtonmultiply"
+                    android:background="@drawable/btnminudp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:tag="-" />
+    
+</RelativeLayout>
